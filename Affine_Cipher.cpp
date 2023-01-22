@@ -128,7 +128,7 @@ void decrypt()
 
             position_in_abc = abc.find(chara);
             // utilizatin of mod_for_all function >> incase the outcome of the decypting formula is negative 
-            new_position = mod_for_all_((c * (position_in_abc - b)), 26);
+            new_position = mod_for_all_((c / (position_in_abc - b)), 26);
             char new_chara = abc[new_position];
             decrypted += new_chara;
 
